@@ -1,0 +1,29 @@
+.invalid{
+    border: 1px solid #f00;
+  
+  }
+  body{
+    /* background-color: #00bfff; */
+    padding: 15px;
+  }
+  .style{
+    /* background-color: dimgrey; */
+    padding: 20px;
+  }
+  form{
+    background-color: #00ffff;
+    width: 400px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .first{
+    display: flex;
+  }
+  .sect{
+  }
+  .bad{
+    border-color: #ff0000;
+  }
+  .para{
+    color: #f00;
+  }

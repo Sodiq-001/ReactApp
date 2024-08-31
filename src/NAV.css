@@ -1,0 +1,119 @@
+/* .class{
+    margin: 20px;
+    padding: 30px;
+    background-color: beige;
+    margin-left: 40px;
+    text-decoration: none;
+    text-align: center;
+} */
+ .class{
+    /* padding: 120px; */
+    text-align: center;
+    margin-top: 50px;
+ }
+ .nav{
+    background-image: url(./jeans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-width: 50%;
+    height: 500px;
+ }
+ footer{
+    background-color: rgb(216, 215, 215);
+    /* height: 100px; */
+ }
+ body{
+    /* padding: 20px; */
+ }
+ .link{
+   /* background-color: cornsilk; */
+   
+   padding: 10px;
+   text-align: center;
+ }
+ .show{
+   display: none;
+   height: 40px;
+   width: 8%;
+   font-size: 22px;
+   margin-left: 80px;
+   /* margin: auto; */
+   /* background-color: #f00; */
+ }
+ .bttn{
+   background-color: azure;
+   border-radius: 3px;
+ }
+ .bttn:hover{
+   background-color: aquamarine;
+   border-radius: 3px;
+   border-color: #7fffd4;
+ }
+ .link:hover{
+    background-color: rgb(216, 215, 215);
+    /* padding: 10px; */
+    /* width: 300px; */
+    padding-left: 80px;
+   padding-right: 80px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+ }
+ .lin:hover{
+    background-color: rgb(216, 215, 215);
+
+ }
+ .class{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 30px;
+ }
+ .divv{
+    background-image: radial-gradient(rgb(14, 161, 230), rgb(216, 215, 215),white,aqua);
+    background-repeat: no-repeat;
+ }
+ .invalid{
+   border-color: #f00;
+ }
+ .para{
+   color: #f00;
+ }
+ @media only screen and (max-width: 1050px) {
+   .baaad{
+      display: none;
+   }
+   .sad{
+      display: none;
+   }
+   .show{
+      display: block;
+   }
+   .naav{
+      background-color: aquamarine;
+      padding: 10px;
+   }
+   .ddiv{
+      /* text-align: center; */
+      margin: auto;
+      width: 100%;
+   }
+   
+
+ }
+ @media only screen and (min-width: 1050px) {
+   .ddiv{
+      float: right;
+   }
+   .labe{
+      text-align: center;
+      /* margin: auto; */
+      color: #f0f;
+      background-color: aquamarine;
+      padding: 5px;
+   }
+   .baaad{
+      display: block;
+   }
+
+ }
