@@ -7,7 +7,7 @@
     padding: 15px;
   }
   .style{
-    /* background-color: dimgrey; */
+    background-color: dimgrey;
     padding: 20px;
   }
   form{
@@ -26,4 +26,8 @@
   }
   .para{
     color: #f00;
+  }
+  .form{
+    width: 40%;
+    height: 80%;
   }

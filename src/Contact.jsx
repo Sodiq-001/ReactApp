@@ -29,7 +29,7 @@ function Contact() {
   
   return (
     <div style={{ fontFamily:'sans-serif', width:'80%',marginTop:'51px' }} className='style ddiv'>
-      <form action="" onSubmit={formik.handleSubmit} style={{margin:"auto"}}>
+      <form action="" onSubmit={formik.handleSubmit} style={{margin:"auto"}} className='form'>
         <h1 style={{textAlign:'center'}}>Contact Us</h1>
         <div className='first'>
           <section  style={{padding:"10px"}}>

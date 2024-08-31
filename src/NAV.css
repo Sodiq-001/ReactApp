@@ -11,6 +11,11 @@
     text-align: center;
     margin-top: 50px;
  }
+ .cllass{
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+ }
  .nav{
     background-image: url(./jeans.jpg);
     background-repeat: no-repeat;

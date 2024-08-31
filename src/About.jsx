@@ -34,7 +34,7 @@ function About() {
         </div>
         </div>
         <h2 style={{textAlign:'center', width:'100%', backgroundColor:'skyblue'}}>Our Staff</h2>
-        <div style={{display:'flex'}}>
+        <div className='cllass'>
 
           <nav style={{padding:'10px'}}>
             <img src={Avatar} alt="" style={{width:'100%'}}/>
