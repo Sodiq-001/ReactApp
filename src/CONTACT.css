@@ -9,6 +9,7 @@
   .style{
     background-color: dimgrey;
     padding: 20px;
+    /* text-align: center; */
   }
   form{
     background-color: #00ffff;
@@ -28,6 +29,6 @@
     color: #f00;
   }
   .form{
-    width: 40%;
+    width: 50%;
     height: 80%;
   }
