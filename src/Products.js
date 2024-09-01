@@ -64,7 +64,7 @@ function Products() {
 
             </div>
             <h1 style={{color:'skyblue'}}>Latest Arrivals September 2024</h1>
-            <h2 style={{color:'skyblue'}}>Shop Now ...</h2>
+            <h2 style={{color:'skyblue'}}>Shop Now ..</h2>
             <div style={{display:'flex'}}>
             <div className='container'>
                <img className='img' src={jeans1} alt='' onMouseOver={handleCart} onMouseOut={seet}/>
