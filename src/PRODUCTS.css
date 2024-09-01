@@ -3,7 +3,12 @@
     width: 100%;
     /* height: 400px; */
   }
-  
+  .sset{
+    /* padding-left: 30px; */
+    /* text-align: center; */
+    margin: auto;
+    color: #080;
+  }
   .btn {
     position: absolute;
     top: 8px;
@@ -14,7 +19,7 @@
   
     .img { 
     width: 100%;
-    height: 100%;
+    height: 80%;
     /* opacity: 0.3; */
   }
   /* .img:hover{
@@ -25,4 +30,35 @@
     /* top: 50; */
 
 
+  }
+  .dropbtn{
+    cursor: pointer;
+    font-size: 25px;
+    position: relative;
+    display: inline-block;
+
+  }
+  .dropdown{
+    display: none;
+    position: absolute;
+    background-color: #adff2f;
+    min-width: 300px;
+    z-index: 1;
+  }
+  .dropbtn .tool{
+    /* visibility: hidden; */
+    width: 80px;
+    background-color: #adff2f;
+    color: #000;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  .dropbtn:hover .tool{
+    visibility: visible;
   }

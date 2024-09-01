@@ -99,9 +99,10 @@
       padding: 10px;
    }
    .ddiv{
-      /* text-align: center; */
+      text-align: center;
       margin: auto;
       width: 100%;
+
       /* background-color: #f00; */
    }
    .form{

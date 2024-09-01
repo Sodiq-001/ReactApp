@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './NAV.css'
 import './all.css'
 import jeans1 from './img/jeans6.jpg'
+import jjean from './img/jackets7.jpg'
 import "./fontawesome-free-6.6.0-web/css/all.css"
 import "./fontawesome-free-6.6.0-web/js/all"
 // import jeans2 from './img/jeans2.jpg'
@@ -17,6 +18,13 @@ function Products() {
   let inputRef=useRef()
   let reff =useRef()
   let rref =useRef()
+  let reef =useRef()
+  let hhand =()=>{
+    reef.current.style.display = "block"
+  }
+  let ssee=()=>{
+    reef.current.style.display = "none"
+  }
   let handleCart=()=>{
     // console.log(e.target);
     // inputRef.current.style.display="show"
@@ -51,8 +59,12 @@ function Products() {
             <Link className='class' to={"/products/shorts"}>Shorts</Link>
             <Link className='class' to={"/products/trousers"}>Trousers</Link>
             <Link className='class' to={"/products/jackets"}>Jackets</Link>
-            <button style={{backgroundColor:'skyblue', borderColor:'skyblue',float:'right'}}>Cart</button>
+            <div className='fas fa-cart-plus fa-6x sset dropbtn' ><span className='tool'>Cart</span></div>
+            <div className='dropdown'></div>
+
             </div>
+            <h1 style={{color:'skyblue'}}>Latest Arrivals September 2024</h1>
+            <h2 style={{color:'skyblue'}}>Shop Now ...</h2>
             <div style={{display:'flex'}}>
             <div className='container'>
                <img className='img' src={jeans1} alt='' onMouseOver={handleCart} onMouseOut={seet}/>
@@ -67,9 +79,13 @@ function Products() {
                <img className='img' src={jack} alt='' onMouseOver={hand} onMouseOut={sset}/>
                <button className='btn' ref={rref}>Add to cart</button>
             </div>
+            <div className='container'>
+              <img className='img' src={jjean} alt='' onMouseOver={hhand} onMouseOut={ssee}/>
+              <button className='btn' ref={reef}>Add to cart</button>
+
+            </div>
             </div>                   
             <footer>
-                <i className='fas fa-cart-plus fa-6x'></i>
             </footer>
     </div>
   )
