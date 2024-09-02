@@ -2,34 +2,36 @@ import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './NAV.css'
 import "./w3.css"
-function Nav() {
-  let inputRef=useRef()
-let [showw,setShow]=useState(false)
-  let style =()=>{
-     setShow(!showw)
-     if (showw == true) {
-      inputRef.current.style.display = "none"
-    } else {
-      inputRef.current.style.display = "block"
-      
-     }
-  }
-  // let god =()=>{
-  //   inputRef.current.className=""
-  // }
+import {motion} from 'framer-motion'
 
+function Nav() {
+//  let [stat,setStat]=useState(true)
+//  const style =()=>{
+//  setStat(!stat)
+let good=useRef()
+//  }
+let [tog,setTog]=useState(true)
+    let hand=()=>{
+      
+        setTog(!tog)
+      // good.current.className="guo"
+    }
   return (
     <div>
-      {/* <button style={{fontSize:"20px", display:'none'}}>☰</button> */}
-      <nav className='naav' style={{display:'flex', position:'fixed',top:'0',left:'0',right:'0'}}>
-      <button className='show ' onClick={style} >☰</button>
+    
+      {/* <nav className='naav' style={{display:'flex', position:'fixed',top:'0',left:'0',right:'0'}}> */}
+      <nav className='w3-container w3-top w3-hide-large w3-xlarge '
+       style={{display:'flex', position:'fixed',top:'0',left:'0',right:'0', backgroundColor:'aquamarine'}}>
+      <button className='show ' onClick={hand} >☰</button>
 
-      <label className='labe' style={{color:'black', fontSize:'30px'}}>DMS Clothes</label>
+  <label className='labe' ref={good} style={{color:'black', fontSize:'30px'}}>DMS Clothes</label>
 
       </nav>
 
-        <nav className='w3-sidebar baaad' ref={inputRef} style={{textAlign:'center',marginTop:'51px'}}>
+      {tog?  <motion.nav   animate={{scale:1, x:1}} initial={{scale:0, x:0}}className='w3-sidebar baaad ' ref={good}
+       style={{textAlign:'center',marginTop:'51px'}}>
         <br/>
+        <h1>DMS Clothes</h1>
             <br/>
             <br/>
              
@@ -47,7 +49,7 @@ let [showw,setShow]=useState(false)
             <br/>
             <br/>
             <Link to={"/products"} className='link' style={{marginTop:'50px',textDecoration:'none', color:'black', fontSize:'20px'}}>Products</Link><br/>
-        </nav>
+        </motion.nav> : ''}
     </div>
   )
 }

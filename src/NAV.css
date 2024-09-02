@@ -73,6 +73,8 @@
     font-size: 20px;
     font-family: sans-serif;
     padding: 30px;
+    margin-left: 40px;
+    /* text-align: center; */
  }
  .divv{
     background-image: radial-gradient(rgb(14, 161, 230), rgb(216, 215, 215),white,aqua);
@@ -91,6 +93,10 @@
    .sad{
       display: none;
    }
+   .class{
+      padding: 5px;
+      margin: auto;
+   }
    .show{
       display: block;
    }
@@ -105,8 +111,14 @@
 
       /* background-color: #f00; */
    }
+   .immg{
+      padding-left: 0px;
+   }
    .form{
       width: 100%;
+   }
+   .dropbtn{
+      margin-left: 5px;
    }
    
 

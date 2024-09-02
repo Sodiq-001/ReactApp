@@ -1,6 +1,7 @@
 .container {
     position: relative;
     width: 100%;
+    display: inline-block;
     /* height: 400px; */
   }
   .sset{
@@ -14,13 +15,22 @@
     top: 8px;
     left: 16px;
     font-size: 18px;
+    cursor: pointer;
     display:   none;
+    /* visibility: hidden; */
   }
+  
   
     .img { 
     width: 100%;
     height: 80%;
     /* opacity: 0.3; */
+  }
+  .container:hover .btn{
+    display: block;
+    /* visibility: hidden; */
+    background-color: #0ff;
+    border: none;
   }
   /* .img:hover{
     
@@ -31,13 +41,7 @@
 
 
   }
-  .dropbtn{
-    cursor: pointer;
-    font-size: 25px;
-    position: relative;
-    display: inline-block;
-
-  }
+ 
   .dropdown{
     display: none;
     position: absolute;
@@ -45,20 +49,47 @@
     min-width: 300px;
     z-index: 1;
   }
-  .dropbtn .tool{
-    /* visibility: hidden; */
+  .dropbtn{
+    cursor: pointer;
+    font-size: 25px;
+    position: relative;
+    display: inline-block;
+    margin-left: 170px;
+
+  }
+  .guo{
+    display: block;
+  }
+  .tool{
+    visibility: hidden;
     width: 80px;
-    background-color: #adff2f;
+    background-color: #0ff;
     color: #000;
     text-align: center;
     border-radius: 5px;
-    padding: 5px 0;
+    /* padding: 3px 0; */
     position: absolute;
+    /* top: 20px; */
     z-index: 1;
     bottom: 100%;
     left: 50%;
-    margin-left: -60px;
+    
+    margin-left: -40px;
   }
   .dropbtn:hover .tool{
     visibility: visible;
+  }
+  .immg{
+    
+  }
+  .ask{
+    position: fixed;
+    top: 26%;
+    left: 74%;
+    width: 25%;
+    border-radius: 10px;
+    background-color: aquamarine;
+    padding: 10px;
+    /* height: 400px; */
+    /* display: none; */
   }

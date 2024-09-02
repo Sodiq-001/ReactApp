@@ -5,6 +5,7 @@
 // import Map from "./Map";
 // import Nuse from "./Nuse";
 import React from "react";
+import Pop from "./Pop"
 // import Words from "./Words";
 import  {Route, Routes } from "react-router-dom";
 import Contact from "./Contact";
@@ -22,6 +23,7 @@ import Products from "./Products";
 // import Home from "./Home";
 function App() {
   return (
+    <>
     <Routes>
 
       <Route path="/" element={<Home/>}/>
@@ -37,6 +39,8 @@ function App() {
       {/* <Route path="/mca" element={<Mca/>}/> */}
    
     </Routes>
+    </>
+    // <Pop/>
     
 //     // < >
 //    {/* <Some set="a am good"/> */}
